@@ -59,7 +59,7 @@ start()
 // .then(res => res.json())
 // .then(d => console.log(d))  => desse jeito funciona mas não é o adequado
 
-// maneira melhor de escrever uma promoses  
+// maneira melhor de escrever uma promises  
 async function starting() {
   const response = await fetch('https://api.github.com/users/moutinhofuturedev').then(res => res.json())
   const reposResponse = await fetch(response.repos_url).then(repo => repo.json())
